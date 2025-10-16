@@ -1,0 +1,21 @@
+## DBsubject(Calculus)
+## DBchapter(Differentiation)
+## DBsection(Concept)
+DOCUMENT();
+loadMacros("PGML.pl");
+
+$a = random(2,5,1);
+$b = random(1,4,1);
+
+BEGIN_PGML
+Compute the derivative of [` $a x^2 + $b x `].
+
+[_]{}
+END_PGML
+
+BEGIN_PGML_SOLUTION
+The derivative is [` 2 $a x + $b `].
+END_PGML_SOLUTION
+
+ANS(Formula("2*$a*x + $b"));
+ENDDOCUMENT();
