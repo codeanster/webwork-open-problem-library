@@ -19,3 +19,10 @@ pm_to_blib
 .bak
 setDefs/
 
+opl_parser/outputs/*
+!opl_parser/outputs/**/.gitkeep
+opl_parser/data/staging/*
+!opl_parser/data/staging/.gitkeep
+opl_parser/data/raw/*
+!opl_parser/data/raw/.gitkeep
+opl_parser/**/__pycache__/

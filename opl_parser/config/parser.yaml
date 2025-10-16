@@ -1,0 +1,17 @@
+root: data/raw/OpenProblemLibrary
+output:
+  samples: outputs/samples
+  full: outputs/full
+  shard_size: 1000
+logging:
+  level: INFO
+  stats_every: 200
+filters:
+  include_extensions:
+    - .pg
+  exclude_directories:
+    - tmp
+    - legacy
+runtime:
+  workers: 4
+  fail_fast: false

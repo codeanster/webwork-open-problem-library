@@ -1,0 +1,18 @@
+## DBsubject(Algebra)
+## DBchapter(Quadratic equations)
+## DBsection(Concept)
+## Date(06/06/2024)
+DOCUMENT();
+loadMacros("PG.pl", "PGbasicmacros.pl");
+
+$radius = random(3,10,1);
+$circumference = 2 * pi * $radius;
+
+BEGIN_TEXT
+Find the circumference of a circle with radius \($radius\).
+$BR
+Answer: \{ ans_rule(20) \}
+END_TEXT
+
+ANS($circumference->cmp);
+ENDDOCUMENT();
